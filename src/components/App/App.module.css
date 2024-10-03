@@ -3,7 +3,17 @@
 }
 
 .title {
+  text-align: center;
+}
+
+.title {
   margin-bottom: 40px;
+}
+
+.icon {
+  width: 30px;
+  height: 35px;
+  color: yellowgreen;
 }
 
 .span {

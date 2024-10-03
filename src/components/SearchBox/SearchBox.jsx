@@ -12,7 +12,7 @@ const SearchBox = () => {
   };
 
   return (
-    <div>
+    <div className={s.wrapp}>
       <p className={s.text}>Find contacts by name</p>
       <input
         className={s.input}
