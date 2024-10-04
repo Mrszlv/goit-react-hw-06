@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 const Contact = ({ contact }) => {
   const dispatch = useDispatch();
   return (
-    <div className={s.container}>
+    <div className={s.contactCard}>
       <li className={s.item}>
         <span className={s.name}>
           <MdManageAccounts /> {contact.name}:

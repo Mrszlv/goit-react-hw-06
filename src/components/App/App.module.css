@@ -1,9 +1,15 @@
 .wrapp {
-  margin: 20px;
+  padding: 20px;
 }
 
 .title {
+  margin: 0 auto;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
   text-align: center;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22), 0 2px 2px rgba(0, 0, 0, 0.34),
+    0 4px 4px rgba(0, 0, 0, 0.28), 0 8px 8px rgba(0, 0, 0, 0.22);
 }
 
 .title {
