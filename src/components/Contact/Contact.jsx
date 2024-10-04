@@ -1,8 +1,9 @@
 import { deleteContact } from "../../redux/contactsSlice";
 import s from "./Contact.module.css";
 import { RiPhoneFill } from "react-icons/ri";
-import { MdManageAccounts } from "react-icons/md";
+import { IoPerson } from "react-icons/io5";
 import { useDispatch } from "react-redux";
+import { MdDelete } from "react-icons/md";
 
 const Contact = ({ contact }) => {
   const dispatch = useDispatch();
@@ -10,7 +11,7 @@ const Contact = ({ contact }) => {
     <div className={s.contactCard}>
       <li className={s.item}>
         <span className={s.name}>
-          <MdManageAccounts /> {contact.name}:
+          <IoPerson /> {contact.name}:
         </span>
         <span className={s.number}>
           <RiPhoneFill /> {contact.number}
@@ -20,7 +21,7 @@ const Contact = ({ contact }) => {
         className={s.btn}
         onClick={() => dispatch(deleteContact(contact.id))}
       >
-        Delete contact
+        DEL <MdDelete className={s.icon} />
       </button>
     </div>
   );

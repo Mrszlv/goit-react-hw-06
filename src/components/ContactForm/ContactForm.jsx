@@ -4,6 +4,7 @@ import s from "./ContactForm.module.css";
 import { nanoid } from "nanoid";
 import { useDispatch, useSelector } from "react-redux";
 import { addContact, selectContacts } from "../../redux/contactsSlice";
+import { IoPersonAddSharp } from "react-icons/io5";
 
 const ContactForm = () => {
   const dispatch = useDispatch();
@@ -49,16 +50,26 @@ const ContactForm = () => {
       <Form className={s.form}>
         <label className={s.label}>
           Name
-          <Field type="text" name="name" className={s.field} />
+          <Field
+            type="text"
+            name="name"
+            className={s.field}
+            placeholder="Enter name..."
+          />
           <ErrorMessage className={s.error} name="name" component="span" />
         </label>
         <label className={s.label}>
           Number phone
-          <Field type="text" name="number" className={s.field} />
+          <Field
+            type="text"
+            name="number"
+            className={s.field}
+            placeholder="Enter number..."
+          />
           <ErrorMessage className={s.error} name="number" component="span" />
         </label>
         <button type="submit" className={s.btn}>
-          Add contact
+          ADD <IoPersonAddSharp />
         </button>
       </Form>
     </Formik>

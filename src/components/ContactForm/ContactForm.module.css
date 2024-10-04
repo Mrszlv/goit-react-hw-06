@@ -13,7 +13,7 @@
 }
 
 .form:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.3),
     0 8px 16px rgba(0, 0, 0, 0.22), 0 16px 32px rgba(0, 0, 0, 0.15);
 }
@@ -21,6 +21,7 @@
 .label {
   display: flex;
   flex-direction: column;
+  transition: color 0.3s ease;
 }
 
 label:hover {
@@ -28,12 +29,19 @@ label:hover {
 }
 
 .field {
-  border-radius: 10px;
+  border: none;
+  border-bottom: 1px solid;
+  border-radius: 5px;
   padding: 10px;
+  transition: border-color 0.3s ease;
 }
 
 .field:hover {
   border-color: yellowgreen;
+}
+
+.field:focus {
+  outline: none;
 }
 
 .error {
@@ -41,10 +49,15 @@ label:hover {
 }
 
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   background-color: transparent;
   border: 1px solid;
-  width: 150px;
-  padding: 15px;
+  padding: 8px 16px;
+  width: 100px;
+  transition: border-color 0.3s ease, color 0.3s ease;
 }
 
 .btn:hover {
