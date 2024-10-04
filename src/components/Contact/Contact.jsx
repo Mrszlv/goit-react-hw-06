@@ -21,7 +21,7 @@ const Contact = ({ contact }) => {
         className={s.btn}
         onClick={() => dispatch(deleteContact(contact.id))}
       >
-        DEL <MdDelete className={s.icon} />
+        <MdDelete className={s.icon} />
       </button>
     </div>
   );

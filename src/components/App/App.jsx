@@ -8,11 +8,12 @@ import { FaAddressBook } from "react-icons/fa";
 const App = () => {
   return (
     <div className={s.wrapp}>
-      <h1 className={s.title}>
+      <div className={s.header}>
         <FaAddressBook className={s.icon} />
-        {"  "}
-        Phone<span className={s.span}>book</span>
-      </h1>
+        <h1 className={s.title}>
+          Phone<span className={s.span}>book</span>
+        </h1>
+      </div>
       <ContactForm />
       <SearchBox />
       <ContactList />
